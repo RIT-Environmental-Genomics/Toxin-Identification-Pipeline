@@ -1,0 +1,12 @@
+# scripts that extract RNA-seq data and executes quality control 
+
+# pull RNA-seq data from SRA website
+prefetch <SRA_accession_id>
+
+
+# convert raw sequencing data to fastqc file 
+fasterq-dump <SRR_file_name>
+
+# execute fastqc; you will need two command if RNA_seq is paired end 
+fastqc <SRR_file_name_*.fastq>
+fastqc <SRR_file_name_*.fastq>
