@@ -35,11 +35,11 @@ conda deactivate
 |Package|Location|Use|
 |  ------ | ------ | ------ |
 |Conda|[Here](https://anaconda.org/anaconda/conda)| |
-|BioConda|[Here]( )| |
-|SRA-Tools|[Here]( )| |
-|Trimmomatic|[Here]( )| |
-|Salmon|[Here]( )| |
-|Trinity|[Here]( )| |
+|BioConda|[Here](https://bioconda.github.io/)| |
+|SRA-Tools|[Here](https://github.com/ncbi/sra-tools)| |
+|Trimmomatic|[Here](https://github.com/usadellab/Trimmomatic)| |
+|Salmon|[Here](https://combine-lab.github.io/salmon/getting_started/)| |
+|Trinity|[Here](https://combine-lab.github.io/salmon/getting_started/)| |
 
 A majority of this project for De Novo was run on a server limited to 2-8 cores and 20-60GB DDR3 RAM 
 This project can be run on minimum of these specs but was increased due to time constraints and limitations of those working on this pipeline.
