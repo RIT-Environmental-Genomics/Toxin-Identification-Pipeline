@@ -2,7 +2,7 @@
 
 [![]()
 
-[![buildstatus]()]
+[![]()]
 
 This project focuses on the production of a pipeline to identify and (hopefully) dock proteins related to toxins by:
 
