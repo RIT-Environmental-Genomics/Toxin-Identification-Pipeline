@@ -15,7 +15,7 @@ This project focuses on the production of a pipeline to identify and (hopefully)
 
 |Package|Use|
 |  ------ | ------ |
-|[Conds](https://anaconda.org/anaconda/conda)| |
+|[Conda](https://anaconda.org/anaconda/conda)| |
 |[BioConda](https://bioconda.github.io/)| |
 |[SRA-Tools](https://github.com/ncbi/sra-tools)| |
 |[CutAdapt]()| |
