@@ -10,8 +10,8 @@ This project focuses on the production of a pipeline to identify and (hopefully)
 -
 
 
-'''sh
+```sh
 conda create -n <env name> python=3.12
 conda activate <env name>
 conda deactivate
-'''
+```
