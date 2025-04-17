@@ -9,6 +9,7 @@ This project focuses on the production of a pipeline to identify and (hopefully)
 -
 -
 
+### Reference Based Pipeline
 ## Required Packages 
 
 |Package|Location|
@@ -20,3 +21,5 @@ conda create -n <env name> python=3.12
 conda activate <env name>
 conda deactivate
 ```
+
+### De Novo Pipeline
