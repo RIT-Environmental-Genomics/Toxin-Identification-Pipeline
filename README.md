@@ -13,7 +13,7 @@ This project focuses on the production of a pipeline to identify and (hopefully)
 
 |Package|Location|
 |------|------|
-|Conda|[https://anaconda.org/anaconda/conda][PlDb]|
+|Conda|[https://anaconda.org/anaconda/conda]|
 
 ```sh
 conda create -n <env name> python=3.12
