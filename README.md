@@ -13,15 +13,15 @@ This project focuses on the production of a pipeline to identify and (hopefully)
 
 ### Required Packages 
 
-|Package|Location|Use|
-|  ------ | ------ | ------ |
-|Conda|[Here](https://anaconda.org/anaconda/conda)| |
-|BioConda|[Here]( )| |
-|SRA-Tools|[Here]( )| |
-|CutAdapt|[Here]( )| |
-|Hisat2|[Here]( )| |
-|Stringtie|[Here]( )| |
-|Diamond|[Here]( )| |
+|Package|Use|
+|  ------ | ------ |
+|[Conds](https://anaconda.org/anaconda/conda)| |
+|[BioConda]( )| |
+|[SRA-Tools]]( )| |
+|[CutAdapt]( )| |
+|[Hisat2]( )| |
+|[Stringtie]( )| |
+|[Diamond]( )| |
 
 
 ```sh
@@ -32,14 +32,14 @@ conda deactivate
 
 ## De Novo Pipeline:
 
-|Package|Location|Use|
-|  ------ | ------ | ------ |
-|Conda|[Here](https://anaconda.org/anaconda/conda)| |
-|BioConda|[Here](https://bioconda.github.io/)| |
-|SRA-Tools|[Here](https://github.com/ncbi/sra-tools)| |
-|Trimmomatic|[Here](https://github.com/usadellab/Trimmomatic)| |
-|Salmon|[Here](https://combine-lab.github.io/salmon/getting_started/)| |
-|Trinity|[Here](https://combine-lab.github.io/salmon/getting_started/)| |
+|Package|Use|
+|  ------ | ------ |
+|[Conda](https://anaconda.org/anaconda/conda)| |
+|[BioConda](https://bioconda.github.io/)| |
+|[SRA-Tools](https://github.com/ncbi/sra-tools)| |
+|[Trimmomatic](https://github.com/usadellab/Trimmomatic)| |
+|[Salmon](https://combine-lab.github.io/salmon/getting_started/)| |
+|[Trinity](https://combine-lab.github.io/salmon/getting_started/)| |
 
 A majority of this project for De Novo was run on a server limited to 2-8 cores and 20-60GB DDR3 RAM 
 This project can be run on minimum of these specs but was increased due to time constraints and limitations of those working on this pipeline.
