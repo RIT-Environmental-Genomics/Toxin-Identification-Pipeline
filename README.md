@@ -16,12 +16,12 @@ This project focuses on the production of a pipeline to identify and (hopefully)
 |Package|Use|
 |  ------ | ------ |
 |[Conds](https://anaconda.org/anaconda/conda)| |
-|[BioConda]( )| |
-|[SRA-Tools]]( )| |
-|[CutAdapt]( )| |
-|[Hisat2]( )| |
-|[Stringtie]( )| |
-|[Diamond]( )| |
+|[BioConda](https://bioconda.github.io/)| |
+|[SRA-Tools](https://github.com/ncbi/sra-tools)| |
+|[CutAdapt]()| |
+|[Hisat2]()| |
+|[Stringtie]()| |
+|[Diamond]()| |
 
 
 ```sh
