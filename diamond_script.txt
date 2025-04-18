@@ -1,0 +1,13 @@
+#unzip
+gunzip uniprot_sprot.fasta.gz
+
+#get only proteins from the species 
+grep -A 1 ">.*Pseudonaja textilis" uniprot_sprot.fasta > snake_only_sprot.fasta 
+
+#create diamond database from uniport fasta 
+
+diamond makedb --in snake_only_sprot.fasta -d snake_sprot_db
+
+#blastx 
+
+diamond blastx -d snake_sprot_db.dmnd -q <filtered_transcript_fasta> -o <output file name> -f 6 qseqid sseqid pident evalue bitscore -k 1 -p 4
