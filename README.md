@@ -40,7 +40,7 @@ or
 ```sh
 conda create -f test.yml
 ```
-
+or
 ```sh
 conda create -n <env name>
 conda activate <env name>
@@ -61,8 +61,8 @@ conda deactivate
 |[Seqtk]()| |
 |[Diamond]()| |
 
-## De Novo Pipeline:
 
+## De Novo Pipeline:
 
 |  ------ |  
 |[Conda](https://anaconda.org/anaconda/conda)| 
