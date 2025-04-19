@@ -1,4 +1,4 @@
-# Toxin Identification Pipeline using Referenced and De Novo RNA Seq data to
+# Toxin Identification Pipeline of RNA Seq data using Reference and De Novo genome sequences
 
 [![]()]
 
