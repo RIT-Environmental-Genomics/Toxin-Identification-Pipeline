@@ -77,13 +77,19 @@ fastqc <SRRID_2.fasta>
 ```
 Forward and reverse strands are identified using _1 (Forward) and _2 (Reverse). 
 
-cutadapt was used to cut any remaining adapters or unreliable sequences found in FASTQC
+Cutadapt was used to cut any remaining adapters or unreliable sequences found in FASTQC
+
 ```sh
 cutadapt -a <Sequence in ATCG format> -o output.fasta input.fasta
 ```
+Hisat2 was then used to build a genome-index based on a reference genome and aligned to forward and reverse reads to provide a " schaffold " of the fully alligned strands
+```sh
+hisat2-build -p <threads> <Reference_Genome>_genomic.fna genome-index
 
-
-
+hisat2 -p <threads> -x genome-index --dta -1 <Forward Strand>.fastq -2 <Reverse_Strand>.fastq -S aligned_strands.sam
+```
+-1 = ```forward strand```
+-2 = ```reverse strand```
 
 
 ## De Novo Pipeline:
