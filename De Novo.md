@@ -1,8 +1,8 @@
 ## De Novo Pipeline:
 
-|  ------ |  
-|[Conda](https://anaconda.org/anaconda/conda)| 
-|[Conda-Forge](https://conda-forge.org/)| 
+|  ------ |
+|[Conda](https://anaconda.org/anaconda/conda)|
+|[Conda-Forge](https://conda-forge.org/)|
 |[BioConda](https://bioconda.github.io/)| 
 
 |Package|Use|
