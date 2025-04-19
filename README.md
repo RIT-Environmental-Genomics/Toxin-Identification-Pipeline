@@ -25,16 +25,7 @@ This project focuses on the production of a pipeline to identify and (hopefully)
 |[Samtools]()| |
 |[Bedtools]()| |
 |[Seqtk]()| |
-|[Diamond]()| |
-
-## De Novo Pipeline:
-
-|  ------ |  
-|[Conda](https://anaconda.org/anaconda/conda)| 
-|[Conda-Forge](https://conda-forge.org/)| 
-|[BioConda](https://bioconda.github.io/)| 
-
-|Package|Use|
+|[Diamond]()| | 
 |[SRA-Tools](https://github.com/ncbi/sra-tools)| |
 |[Trimmomatic](https://github.com/usadellab/Trimmomatic)| |
 |[Salmon](https://combine-lab.github.io/salmon/getting_started/)| |
