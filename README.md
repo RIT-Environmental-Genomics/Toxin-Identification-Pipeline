@@ -13,15 +13,12 @@ This project focuses on the production of a pipeline to identify and (hopefully)
 
 ### Required Packages 
 
-|Package|Use|
-|  ------ | ------ |
-|[Conda](https://anaconda.org/anaconda/conda)| |
-|[BioConda](https://bioconda.github.io/)| |
-|[SRA-Tools](https://github.com/ncbi/sra-tools)| |
-|[CutAdapt]()| |
-|[Hisat2]()| |
-|[Stringtie]()| |
-|[Diamond]()| |
+|Repository| 
+|  ------ | 
+|[Conda](https://anaconda.org/anaconda/conda)| 
+|[BioConda](https://bioconda.github.io/)| 
+
+
 
 
 ```sh
@@ -29,6 +26,16 @@ add bioconda and conda-forge repositories
 conda config –add channels bioconda
 conda config –add channels conda-forge
 ```
+|Package|Use|
+|  ------ | ------ |
+|[SRA-Tools](https://github.com/ncbi/sra-tools)| |
+|[CutAdapt]()| |
+|[Hisat2]()| |
+|[Stringtie]()| |
+|[Samtools]()| |
+|[Bedtools]()| |
+|[Seqtk]()| |
+|[Diamond]()| |
 
 ```sh
 conda create -n <env name> python=3.12
