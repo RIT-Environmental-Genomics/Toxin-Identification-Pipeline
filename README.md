@@ -96,7 +96,7 @@ GTF files converted to GFF3 files
 
 GFF3 files were then filtered based on Transcripts Per Million ```TPM``` with only top 25 percentile of most abundant being left after filtering was completed
 
-After filtering, [Uniprot's](https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_trembl.fasta.gz) Toxin database was used 
+After filtering, [Uniprot's](https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_trembl.fasta.gz) Toxin database was used to 
 
 
 ```sh
@@ -109,6 +109,7 @@ diamond blastx \
 	-k 1 \
 	-t /tmp/diamond_temp
 ```
+
 
 ## De Novo Pipeline:
 
