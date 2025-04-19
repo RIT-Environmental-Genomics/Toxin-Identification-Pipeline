@@ -9,7 +9,7 @@ This project focuses on the production of a pipeline to identify and (hopefully)
 -
 -
 
-## Reference Based Pipeline:
+## __Reference Based Pipeline:__
 
 ### Required Packages 
 
@@ -26,6 +26,14 @@ add bioconda and conda-forge repositories
 conda config –add channels bioconda
 conda config –add channels conda-forge
 ```
+
+
+```sh
+conda create -n <env name> python=3.12
+conda activate <env name>
+conda deactivate
+```
+
 |Package|Use|
 |  ------ | ------ |
 |[SRA-Tools](https://github.com/ncbi/sra-tools)| |
@@ -36,13 +44,6 @@ conda config –add channels conda-forge
 |[Bedtools]()| |
 |[Seqtk]()| |
 |[Diamond]()| |
-
-```sh
-conda create -n <env name> python=3.12
-conda activate <env name>
-conda deactivate
-```
-
 
 ## De Novo Pipeline:
 
