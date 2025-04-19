@@ -96,7 +96,19 @@ GTF files converted to GFF3 files
 
 GFF3 files were then filtered based on Transcripts Per Million ```TPM``` with only top 25 percentile of most abundant being left after filtering was completed
 
+After filtering, ```[Uniprot's](https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_trembl.fasta.gz)``` Toxin database was used 
 
+
+```sh
+diamond blastx \
+	-d /home/Toxicology/Uniprot_trembl_fasta/snail_db.dmnd \
+	-q /home/Toxicology/SAMN45053938_Conus_Taxtile/genome-index/filtered_all.fasta \
+	-o /home/Toxicology/SAMN45053938_Conus_Taxtile/Conus_Textile_results.m8 \
+	-p 2 \
+	--sensitive \
+	-k 1 \
+	-t /tmp/diamond_temp
+```
 
 ## De Novo Pipeline:
 
