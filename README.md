@@ -68,9 +68,18 @@ SRA-Tools prefetch command was used to download RNA seq in SRA format
 ```sh
 prefetch <Assencion ID>
 ```
-
+Fast-dump was then used to split the file into forward and reverse strands and FASTQ program's fasatqc command was used to analyze quality of FASTA files
 ```sh
-Fast-dump --split-files <Assencion ID>
+Fast-dump --split-files <SRR ID>
+
+fastqc <SRRID_1.fasta>
+fastqc <SRRID_2.fasta>
+```
+Forward and reverse strands are identified using _1 (Forward) and _2 (Reverse). 
+
+cutadapt was used to cut any remaining adapters or unreliable sequences found in FASTQC
+```sh
+cutadapt -a <Sequence in ATCG format> -o output.fasta input.fasta
 ```
 
 
