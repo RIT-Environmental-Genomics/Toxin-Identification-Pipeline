@@ -53,6 +53,7 @@ conda deactivate
 |Package|Use|
 |  ------ | ------ |
 |[SRA-Tools](https://github.com/ncbi/sra-tools)| |
+|[Fastqc]()||
 |[CutAdapt]()| |
 |[Hisat2]()| |
 |[Stringtie]()| |
@@ -60,6 +61,20 @@ conda deactivate
 |[Bedtools]()| |
 |[Seqtk]()| |
 |[Diamond]()| |
+
+### Step 1: Fastqc
+
+SRA-Tools prefetch command was used to download RNA seq in SRA format
+```sh
+prefetch <Assencion ID>
+```
+
+```sh
+Fast-dump --split-files <Assencion ID>
+```
+
+
+
 
 
 ## De Novo Pipeline:
