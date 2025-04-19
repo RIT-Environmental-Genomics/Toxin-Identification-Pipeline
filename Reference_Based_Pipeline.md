@@ -7,7 +7,7 @@
 |[Conda-Forge](https://conda-forge.org/)| 
 |[BioConda](https://bioconda.github.io/)| 
 
-
+## 1: Create new Conda Environment
 
 Through Conda environment, bioconda and conda-forge repositories were added:
 
@@ -50,7 +50,7 @@ conda deactivate
 |[Seqtk]()| |
 |[Diamond]()| |
 
-### Step 1: Fastqc
+## 2: Prefetch and Fastqc
 
 SRA-Tools prefetch command was used to download RNA seq in SRA format
 ```sh
@@ -65,11 +65,14 @@ fastqc <SRRID_2.fasta>
 ```
 Forward and reverse strands are identified using _1 (Forward) and _2 (Reverse). 
 
+## 3: Trimmomatic or Cutadapt
 Cutadapt was used to cut any remaining adapters or unreliable sequences found in FASTQC
 
 ```sh
 cutadapt -a <Sequence in ATCG format> -o output.fasta input.fasta
 ```
+
+## 4: 
 Hisat2 was then used to build a genome-index based on a reference genome and aligned to forward and reverse reads to provide a " schaffold " of the fully alligned strands
 ```sh
 hisat2-build -p <threads> <Reference_Genome>_genomic.fna genome-index
