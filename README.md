@@ -97,17 +97,37 @@ GTF files converted to GFF3 files
 GFF3 files were then filtered based on Transcripts Per Million ```TPM``` with only top 25 percentile of most abundant being left after filtering was completed
 
 After filtering, [Uniprot's](https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_trembl.fasta.gz) Toxin database was used to 
+``` sh
+#unzip
+gunzip uniprot_sprot.fasta.gz
 
+#
+
+
+```
+
+create diamond database from uniport fasta from only proteins from the species 
+```sh
+grep -A 1 ">.*<species taxa>" uniprot_sprot.fasta > <species>.fasta 
+diamond makedb --in <species>.fasta -d <species>_db
+```
+example
+```sh
+grep -A 1 ">.*Pseudonaja textilis" uniprot_sprot.fasta > snake_only_sprot.fasta 
+diamond makedb --in snake_only_sprot.fasta -d snake_sprot_db
+```
 
 ```sh
 diamond blastx \
-	-d /home/Toxicology/Uniprot_trembl_fasta/snail_db.dmnd \
-	-q /home/Toxicology/SAMN45053938_Conus_Taxtile/genome-index/filtered_all.fasta \
-	-o /home/Toxicology/SAMN45053938_Conus_Taxtile/Conus_Textile_results.m8 \
-	-p 2 \
+	-d <database>.dmnd \
+	-q <filtered_merged_sequences>.fasta \
+	-o <Species_Results>.m8 \
+	-f 6 qseqid sseqid pident evalue bitscore\
+	-p <processors/threads> \
 	--sensitive \
-	-k 1 \
-	-t /tmp/diamond_temp
+	-k 1 <top searches> \
+#if you need to write to a temporary folder
+	-t /tmp/diamond_temp 
 ```
 
 
