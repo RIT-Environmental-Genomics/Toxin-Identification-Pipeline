@@ -8,10 +8,13 @@ This project focuses on the production of a pipeline to identify and (hopefully)
 
 - Uploading RNASeq Data from NCBI
 - Analyzing sequence quality and trimming both adapters and unreliable end sequences
-- Aligning sequences through either:
+- Convert sequences into SAM using:
   - Scaffolding them to a reference genome
   - Assembled as a De Novo sequence using Trinity Assembler
--  
+-  Convert SAM into GFF3 and filter out all but top 25% sequence abundance
+-  Filter forward and reverse Sequences using GFF3
+-  BLASTX sequence to Toxin Database [Uniprot](https://www.uniprot.org/) based on species 
+-  Compare BLASTX results to 
 
 |Repository| 
 |  ------ | 
