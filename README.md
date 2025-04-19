@@ -16,6 +16,7 @@ This project focuses on the production of a pipeline to identify and (hopefully)
 |[BioConda](https://bioconda.github.io/)| 
 
 
+### All Pipelines
 |Package|Use|
 |  ------ | ------ |
 |[SRA-Tools](https://github.com/ncbi/sra-tools)| |
