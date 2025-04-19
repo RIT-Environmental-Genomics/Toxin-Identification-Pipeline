@@ -16,10 +16,12 @@ This project focuses on the production of a pipeline to identify and (hopefully)
 |Repository| 
 |  ------ | 
 |[Conda](https://anaconda.org/anaconda/conda)| 
+|[Conda-Forge](https://conda-forge.org/)| 
 |[BioConda](https://bioconda.github.io/)| 
 
 
 
+Through Conda environment, bioconda and conda-forge repositories were added:
 
 ```sh
 add bioconda and conda-forge repositories
@@ -27,12 +29,14 @@ conda config –add channels bioconda
 conda config –add channels conda-forge
 ```
 
+A new Conda environment can then be 
 
 ```sh
-conda create -n <env name> python=3.12
+conda create -n <env name> python sra-tools cutadapt hisat2 stringtie samtools bedtools seqtk diamond
 conda activate <env name>
 conda deactivate
 ```
+
 
 |Package|Use|
 |  ------ | ------ |
@@ -47,10 +51,13 @@ conda deactivate
 
 ## De Novo Pipeline:
 
+
+|  ------ |  
+|[Conda](https://anaconda.org/anaconda/conda)| 
+|[Conda-Forge](https://conda-forge.org/)| 
+|[BioConda](https://bioconda.github.io/)| 
+
 |Package|Use|
-|  ------ | ------ |
-|[Conda](https://anaconda.org/anaconda/conda)| |
-|[BioConda](https://bioconda.github.io/)| |
 |[SRA-Tools](https://github.com/ncbi/sra-tools)| |
 |[Trimmomatic](https://github.com/usadellab/Trimmomatic)| |
 |[Salmon](https://combine-lab.github.io/salmon/getting_started/)| |
