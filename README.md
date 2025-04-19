@@ -29,13 +29,25 @@ conda config –add channels bioconda
 conda config –add channels conda-forge
 ```
 
-A new Conda environment can then be 
+A new Conda environment can then be used in any of the three following ways
 
 ```sh
 conda create -n <env name> python sra-tools cutadapt hisat2 stringtie samtools bedtools seqtk diamond
 conda activate <env name>
 conda deactivate
 ```
+or 
+```sh
+conda create -f test.yml
+```
+
+```sh
+conda create -n <env name>
+conda activate <env name>
+conda install <package>
+conda deactivate
+```
+
 
 
 |Package|Use|
