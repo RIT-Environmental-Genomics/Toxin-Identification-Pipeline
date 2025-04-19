@@ -65,20 +65,21 @@ fastqc <SRRID_2.fasta>
 ```
 Forward and reverse strands are identified using _1 (Forward) and _2 (Reverse). 
 
-## 3: Trimmomatic or Cutadapt
-Cutadapt was used to cut any remaining adapters or unreliable sequences found in FASTQC
+## 3: Trimmomatic or CutAdapt
+CutAdapt was used to cut any remaining adapters or unreliable sequences found in FASTQC, however Trimmomatic was used in place of CutAdapt for use in Trinity
 
 ```sh
 cutadapt -a <Sequence in ATCG format> -o output.fasta input.fasta
 ```
 
-## 4: 
-Hisat2 was then used to build a genome-index based on a reference genome and aligned to forward and reverse reads to provide a " schaffold " of the fully alligned strands
+## 4: FASTA Alignment
+Hisat2 was then used to build a genome-index based on a reference genome and aligned to forward and reverse reads to provide a " schaffold " of the fully alligned strands in SAM format
 ```sh
 hisat2-build -p <threads> <Reference_Genome>_genomic.fna genome-index
 
-hisat2 -p <threads> -x genome-index --dta -1 <Forward Strand>.fastq -2 <Reverse_Strand>.fastq -S aligned_strands.sam
+hisat2 -p <threads> -x genome-index --dta -1 <Forward Strand>.fastq -2 <Reverse_Strand>.fastq -S <aligned_strands>.sam
 ```
+
 Sam files were then converted to BAM files
 
 Bam files converted to GTF files
@@ -96,18 +97,19 @@ gunzip uniprot_sprot.fasta.gz
 
 
 ```
-
+## Diamond [BlastX]
 create diamond database from uniport fasta from only proteins from the species 
 ```sh
 grep -A 1 ">.*<species taxa>" uniprot_sprot.fasta > <species>.fasta 
 diamond makedb --in <species>.fasta -d <species>_db
 ```
-example
+
+Example:
 ```sh
 grep -A 1 ">.*Pseudonaja textilis" uniprot_sprot.fasta > snake_only_sprot.fasta 
 diamond makedb --in snake_only_sprot.fasta -d snake_sprot_db
 ```
-
+Diamond BlastX was then done using merged FASTA files and _db.dmnd file
 ```sh
 diamond blastx \
 	-d <database>.dmnd \
@@ -115,6 +117,7 @@ diamond blastx \
 	-o <Species_Results>.m8 \
 	-f 6 qseqid sseqid pident evalue bitscore\
 	-p <processors/threads> \
+#if you need Sensitive:
 	--sensitive \
 	-k 1 <top searches> \
 #if you need to write to a temporary folder
