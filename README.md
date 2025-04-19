@@ -88,8 +88,14 @@ hisat2-build -p <threads> <Reference_Genome>_genomic.fna genome-index
 
 hisat2 -p <threads> -x genome-index --dta -1 <Forward Strand>.fastq -2 <Reverse_Strand>.fastq -S aligned_strands.sam
 ```
--1 = ```forward strand```
--2 = ```reverse strand```
+Sam files were then converted to BAM files
+
+Bam files converted to GTF files
+
+GTF files converted to GFF3 files
+
+GFF3 files were then filtered based on Transcripts Per Million ```TPM``` with only top 25 percentile of most abundant being left after filtering was completed
+
 
 
 ## De Novo Pipeline:
