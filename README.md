@@ -6,8 +6,11 @@
 
 This project focuses on the production of a pipeline to identify and (hopefully) dock proteins related to toxins by:
 
--
--
+- Uploading RNASeq Data from NCBI
+- Analyzing sequence quality and trimming both adapters and unreliable end sequences
+- Aligning sequences through either:
+    -Scaffolding them to a reference genome
+    - 
 
 |Repository| 
 |  ------ | 
