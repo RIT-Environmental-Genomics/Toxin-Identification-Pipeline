@@ -115,7 +115,7 @@ diamond blastx \
 	-d <database>.dmnd \
 	-q <filtered_merged_sequences>.fasta \
 	-o <Species_Results>.m8 \
-	-f 6 qseqid sseqid pident evalue bitscore\
+	-f 6 qseqid sseqid pident evalue bitscore stitle\
 	-p <processors/threads> \
 #if you need Sensitive:
 	--sensitive \
