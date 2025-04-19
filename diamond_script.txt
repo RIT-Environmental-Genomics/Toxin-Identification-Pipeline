@@ -10,4 +10,4 @@ diamond makedb --in snake_only_sprot.fasta -d snake_sprot_db
 
 #blastx 
 
-diamond blastx -d snake_sprot_db.dmnd -q <filtered_transcript_fasta> -o <output file name> -f 6 qseqid sseqid pident evalue bitscore -k 1 -p 4
+diamond blastx -d snake_sprot_db.dmnd -q <filtered_transcript_fasta> -o <output file name> -f 6 qseqid sseqid pident evalue bitscore stitle -k 1 -p 4
