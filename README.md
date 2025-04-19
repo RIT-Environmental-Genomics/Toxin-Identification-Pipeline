@@ -9,7 +9,7 @@ This project focuses on the production of a pipeline to identify and (hopefully)
 -
 -
 
-## __Reference Based Pipeline:__
+## <u>Reference Based Pipeline:<u/>
 
 ### Required Packages 
 
