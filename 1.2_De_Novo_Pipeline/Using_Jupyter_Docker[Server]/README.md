@@ -5,8 +5,7 @@ For the use in this experiment, a [Jupyter Docker](https://jupyter-docker-stacks
 <p>
 The following Hardware was used to drive this project. Note that the total hardware is not the same as what may be required for this project. A lower and upper baseline has not at this time been identified.
 <br >
-  <br >
-</p>
+<br >
 
 |Hardware|Information|
 | ------ | ------ |
@@ -15,6 +14,10 @@ The following Hardware was used to drive this project. Note that the total hardw
 |RAM|196 GB DDR3 2200 MHZ|
 |GPU|N/A|
 |Storage|6TB HDD|
+
+  <br >
+  <br >
+</p>
 
 
  ## WARNING: IT IS RECOMMENDED YOU USE A NON-ROOT USER THAT YOU PROVIDE SUDO TO BUILD ALL ENVIRONMENTS
@@ -42,6 +45,7 @@ New Password: []
 <br >
 Go ahead and add a memorable password, 
 <br >
+<br >
 The following will now appear:
 <br >
 <br >
@@ -58,12 +62,15 @@ Is the information correct? [Y/n]
 
 No information is required for this but can be put in if desired
 <br >
+<br >
 Now give user conda the sudo privileges:
 <br >
 <br >
 ```sh
 usermod -aG sudo conda
 ```
+<br >
+<br >
 </p>
 
  ## Dockerize:
@@ -73,7 +80,6 @@ usermod -aG sudo conda
 Jupyter was Dockerized through Dockerfile using the following process:
   <br >
    <br > 
-</p>
 
 ```sh
 FROM ubuntu:22.04
@@ -111,11 +117,16 @@ CMD ["bash", "-c", "source /opt/conda/etc/profile.d/conda.sh && conda activate b
 
 # IP=0.0.0.0 whitelists all IP addresses to allow anyone to join the jupyter notebook
 ```
+<br >
+<br >
+</p>
+
 
 ## Environment
-
-Docker Environment was then built using docker's build command:
 <p>
+<br >
+Docker Environment was then built using docker's build command:
+
   <br >
 
 ```sh
@@ -137,13 +148,61 @@ sudo docker build -t jupyter .
 Finally Docker run was done with port [-p] 8888:8888 accessable to allow local (or when port forwarded, global) access to the jupyter container using a token authenticator built into Jupyter [No I wasn't going to set up a VPN that's a future Andrew's problem]
 
 ```sh
-sudo docker run -d -p <active port>:<listening port> <Container Name>
+sudo docker run -p <active port>:<listening port> <Container Name>
 ```
+<br > 
 <br >
    <br > 
-</p>
+Example of command:
+<br > 
 
-Example of used commande:
 ```sh
 sudo docker run -d -p 8888:8888 jupyter
 ```
+
+<br >
+<br >
+</p>
+
+### Warning: additional information: 
+
+<p>
+  
+When using -d to run docker as this example has, you MUST check your logs to identify the token for your Jupyter container
+<br >
+To do this, simplyrun docker container command:
+
+```sh
+sudo docker container ls -a
+```
+To show all running and not running containers
+<br >
+If this is your first time running Docker, there should only be one container (your "jupyter" container) available, 
+<br >
+<br >
+Example:
+<br >
+```sh
+CONTAINER ID   IMAGE     COMMAND                  CREATED      STATUS        PORTS                                         NAMES
+3936aee05179   jupyter   "bash -c 'source /op…"   4 days ago   Up 24 hours   0.0.0.0:8888->8888/tcp, [::]:8888->8888/tcp   hardcore_allen
+```
+
+To start, stop, reset or use logs, you will use the container ID of this jupyter container. If a container ever fails it can be identified as such under the status section and can be restarted. Do no create a new container if one already exists, it will not contain previous information and will require you to reinstall all previously installed softwares. simply back up previous saves consistently and use the log command liberally.
+
+Using log:
+
+```sh
+sudo docker container logs 3936aee05179
+```
+
+Logfiles will be provided, you will need to identify the following within the list (Example):
+
+```sh
+[I 2025-04-19 14:17:41.494 ServerApp] http://3936aee05179:8888/tree?token=cb712a3c5c689af38a240f31e5f28b16671705a8d16657fe
+[I 2025-04-19 14:17:41.494 ServerApp]     http://127.0.0.1:8888/tree?token=cb712a3c5c689af38a240f31e5f28b16671705a8d16657fe
+```
+
+The provided token at the end will be your token to acces Jupyter. Please be sure when accessing jupyter you use the provided IP address of your device/network/container in place of 127.0.0.1. you will still provide the port to listen to (in this case 8888) and the remaining portions of the string. 
+
+
+</p>
