@@ -15,7 +15,46 @@ The following Hardware was used to drive this project. Note that the total hardw
 |RAM|196 GB DDR3 2200 MHZ|
 |GPU|N/A|
 |Storage|6TB HDD|
- 
+
+
+ ## WARNING: IT IS RECOMMENDED YOU USE A NON-ROOT USER THAT YOU PROVIDE SUDO TO BUILD ALL ENVIRONMENTS
+
+an example
+```sh
+adduser conda
+```
+Following should appear:
+
+```sh
+Adding user `conda' ...
+Adding new group `conda (1002) ...
+Adding new user `conda' (1002) with group `conda' ...
+Creating home directory `/home/conda' ...
+Copying files from `/etc/skel' ...
+New Password: []
+```
+go ahead and add a memorable password
+
+the following will now appear:
+
+```sh
+Enter the new value, or press ENTER for the default
+        Full Name []: 
+        Room Number []: 
+        Work Phone []: 
+        Home Phone []: 
+        Other []: 
+Is the information correct? [Y/n]
+```
+no information is required for this but can be put in if desired
+
+now give user conda the sudo privileges:
+
+```sh
+usermod -aG sudo conda
+```
+
+ ## Dockerize:
 
 <p>
 <br >
@@ -61,17 +100,37 @@ CMD ["bash", "-c", "source /opt/conda/etc/profile.d/conda.sh && conda activate b
 # IP=0.0.0.0 whitelists all IP addresses to allow anyone to join the jupyter notebook
 ```
 
+## Environment
+
 Docker Environment was then built using docker's build command:
+<p>
+  <br >
 
 ```sh
 sudo docker build -t <Container Name> /path/to/Dockerfile
 ```
+<br >
+   <br > 
+</p>
+
+Example of this command used for this project:
+
+```sh
+sudo docker build -t jupyter .
+```
+
+<p>
+  <br >
 
 Finally Docker run was done with port [-p] 8888:8888 accessable to allow local (or when port forwarded, global) access to the jupyter container using a token authenticator built into Jupyter [No I wasn't going to set up a VPN that's a future Andrew's problem]
 
 ```sh
 sudo docker run -d -p <active port>:<listening port> <Container Name>
 ```
+<br >
+   <br > 
+</p>
+
 Example of used commande:
 ```sh
 sudo docker run -d -p 8888:8888 jupyter
