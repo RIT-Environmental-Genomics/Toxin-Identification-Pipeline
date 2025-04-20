@@ -14,17 +14,7 @@ The following Hardware was used to drive this project. Note that the total hardw
 |RAM|196 GB DDR3 2200 MHZ|
 |GPU|N/A|
 |Storage|6TB HDD|
-
-<p>
-<br >
-  Miniconda was pulled using the following docker command:
-  <br > 
-   <br > 
-</p>
-
-```sh
-docker pull continuumio/miniconda3
-```
+ 
 
 <p>
 <br >
