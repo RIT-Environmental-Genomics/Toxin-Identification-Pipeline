@@ -10,6 +10,7 @@ The following Hardware was used to drive this project. Note that the total hardw
 |CPU|2x 12 Core Intell Xeon 2.13 GHZ|
 |RAM|128 GB DDR3 2200 MHZ|
 |GPU|N/A|
+|Storage|6TB HDD|
 <p>
 <br >
 Jupyter was pulled through docker using the following process:
