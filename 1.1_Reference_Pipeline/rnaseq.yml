@@ -13,6 +13,4 @@ dependencies:
   - bedtools
   - seqtk
   - diamond
-  - trimmomatic
-  - salmon
-  - trinity
+
