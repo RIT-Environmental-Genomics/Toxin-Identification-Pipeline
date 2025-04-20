@@ -61,3 +61,18 @@ CMD ["bash", "-c", "source /opt/conda/etc/profile.d/conda.sh && conda activate b
 # IP=0.0.0.0 whitelists all IP addresses to allow anyone to join the jupyter notebook
 ```
 
+Docker Environment was then built using docker's build command:
+
+```sh
+sudo docker build -t <Container Name> /path/to/Dockerfile
+```
+
+Finally Docker run was done with port [-p] 8888:8888 accessable to allow local (or when port forwarded, global) access to the jupyter container using a token authenticator built into Jupyter [No I wasn't going to make a VPN that's a future Andrew's problem]
+
+```sh
+sudo docker run -d -p <active port>:<listening port> <Container Name>
+```
+Example of used commande:
+```sh
+sudo docker run -d -p 8888:8888 jupyter
+```
