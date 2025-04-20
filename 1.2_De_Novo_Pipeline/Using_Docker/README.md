@@ -4,7 +4,7 @@ For the use in this experiment, a [Jupyter Docker](https://jupyter-docker-stacks
 
 The following Hardware was used to drive this project. Note that the total hardware is not the same as what may be required for this project. A lower and upper baseline has not at this time been identified.
 
-|Hardware|inormation|
+|Hardware|Information|
 | ------ | ------ |
 |Server|Dell PowerEdge R710 Server Rack|
 |CPU|2x 12 Core Intell Xeon 2.13 GHZ|
