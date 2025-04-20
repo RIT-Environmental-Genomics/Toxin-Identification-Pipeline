@@ -21,6 +21,12 @@ This project focuses on the production of a pipeline to identify and (hopefully)
 
 <br >
 
+### Pipelines:
+|Pipeline|
+| ------ |
+|[Refernce](https://github.com/RIT-Environmental-Genomics/Toxicology/blob/main/1.1_Reference_Pipeline/)|
+|[De Novo](https://github.com/RIT-Environmental-Genomics/Toxicology/tree/main/1.2_De_Novo_Pipeline)|
+
   ### Conda Environment Repositories: 
   
 |Repository| 
@@ -30,7 +36,6 @@ This project focuses on the production of a pipeline to identify and (hopefully)
 |[BioConda](https://bioconda.github.io/)| 
 
 <br >
-
 
 ### All Pipelines
 |Package|Use|
