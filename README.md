@@ -1,4 +1,7 @@
-# Toxin Identification Pipeline of RNA Seq data using Reference and De Novo genome sequences
+<p>
+  
+<h1>Toxin Identification Pipeline of RNA Seq data using Reference and <br >
+De Novo genome sequences </h1>
 
 [![]()]
 
@@ -16,11 +19,17 @@ This project focuses on the production of a pipeline to identify and (hopefully)
 -  BLASTX sequence to Toxin Database [Uniprot](https://www.uniprot.org/) based on species 
 -  Compare BLASTX results to 
 
+<br >
+
+  ### Conda Environment Repositories: 
+  
 |Repository| 
 |  ------ | 
 |[Conda](https://anaconda.org/anaconda/conda)| 
 |[Conda-Forge](https://conda-forge.org/)| 
 |[BioConda](https://bioconda.github.io/)| 
+
+<br >
 
 
 ### All Pipelines
@@ -42,3 +51,6 @@ This project focuses on the production of a pipeline to identify and (hopefully)
 |[Trimmomatic](https://github.com/usadellab/Trimmomatic)| |
 |[Salmon](https://combine-lab.github.io/salmon/getting_started/)| |
 |[Trinity](https://combine-lab.github.io/salmon/getting_started/)| |
+
+
+</p>
