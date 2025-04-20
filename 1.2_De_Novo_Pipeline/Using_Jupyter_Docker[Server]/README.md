@@ -11,7 +11,7 @@ The following Hardware was used to drive this project. Note that the total hardw
 | ------ | ------ |
 |Server|Dell PowerEdge R710 Server Rack|
 |CPU|2x 12 Core Intell Xeon 2.13 GHZ|
-|RAM|128 GB DDR3 2200 MHZ|
+|RAM|196 GB DDR3 2200 MHZ|
 |GPU|N/A|
 |Storage|6TB HDD|
 
