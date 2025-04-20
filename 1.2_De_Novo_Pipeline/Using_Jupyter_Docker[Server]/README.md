@@ -17,10 +17,20 @@ The following Hardware was used to drive this project. Note that the total hardw
 
 <p>
 <br >
-Jupyter was pulled through docker using the following process:
+  Miniconda was pulled using the following docker command:
+  <br > 
+   <br > 
+</p>
+
+```sh
+docker pull continuumio/miniconda3
+```
+
+<p>
+<br >
+Jupyter was Dockerized through Dockerfile using the following process:
   <br >
    <br > 
-    <br >
 </p>
 
 ```sh
