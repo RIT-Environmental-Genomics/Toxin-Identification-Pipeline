@@ -18,12 +18,18 @@ The following Hardware was used to drive this project. Note that the total hardw
 
 
  ## WARNING: IT IS RECOMMENDED YOU USE A NON-ROOT USER THAT YOU PROVIDE SUDO TO BUILD ALL ENVIRONMENTS
-
-an example
+<p>
+  <br>
+  
+Example
 ```sh
 adduser conda
 ```
+<br >
+<br >
+
 Following should appear:
+<br >
 
 ```sh
 Adding user `conda' ...
@@ -33,10 +39,12 @@ Creating home directory `/home/conda' ...
 Copying files from `/etc/skel' ...
 New Password: []
 ```
-go ahead and add a memorable password
-
-the following will now appear:
-
+<br >
+Go ahead and add a memorable password, 
+<br >
+The following will now appear:
+<br >
+<br >
 ```sh
 Enter the new value, or press ENTER for the default
         Full Name []: 
@@ -46,13 +54,16 @@ Enter the new value, or press ENTER for the default
         Other []: 
 Is the information correct? [Y/n]
 ```
-no information is required for this but can be put in if desired
 
-now give user conda the sudo privileges:
-
+No information is required for this but can be put in if desired
+<br >
+Now give user conda the sudo privileges:
+<br >
+<br >
 ```sh
 usermod -aG sudo conda
 ```
+</p>
 
  ## Dockerize:
 
