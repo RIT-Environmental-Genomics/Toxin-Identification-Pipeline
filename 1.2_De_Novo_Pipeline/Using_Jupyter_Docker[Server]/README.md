@@ -204,5 +204,5 @@ Logfiles will be provided, you will need to identify the following within the li
 
 The provided token at the end will be your token to acces Jupyter. Please be sure when accessing jupyter you use the provided IP address of your device/network/container in place of 127.0.0.1. you will still provide the port to listen to (in this case 8888) and the remaining portions of the string. 
 
-
+Finally, due to the way this docker container is set up, it is provided under an unsafe http address instead of https. Due to this (along with using port 8888) it isn't recommended to leave this container open for extensive periods of time as a global network, however it is still safe to run in a local environment so long as you never port forward.
 </p>
