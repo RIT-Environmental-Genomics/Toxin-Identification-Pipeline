@@ -67,7 +67,7 @@ Docker Environment was then built using docker's build command:
 sudo docker build -t <Container Name> /path/to/Dockerfile
 ```
 
-Finally Docker run was done with port [-p] 8888:8888 accessable to allow local (or when port forwarded, global) access to the jupyter container using a token authenticator built into Jupyter [No I wasn't going to make a VPN that's a future Andrew's problem]
+Finally Docker run was done with port [-p] 8888:8888 accessable to allow local (or when port forwarded, global) access to the jupyter container using a token authenticator built into Jupyter [No I wasn't going to set up a VPN that's a future Andrew's problem]
 
 ```sh
 sudo docker run -d -p <active port>:<listening port> <Container Name>
