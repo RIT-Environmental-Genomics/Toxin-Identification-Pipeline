@@ -45,6 +45,7 @@ Go ahead and add a memorable password,
 The following will now appear:
 <br >
 <br >
+
 ```sh
 Enter the new value, or press ENTER for the default
         Full Name []: 
