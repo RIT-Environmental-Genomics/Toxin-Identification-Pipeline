@@ -38,7 +38,7 @@ conda install <package>
 conda deactivate
 ```
 
-The environment used within this project was uploaded [here](https://github.com/RIT-Environmental-Genomics/Toxicology/blob/main/1.1_Reference_Pipeline/rnaseq.yml) and may be used to run this pipeline.
+The environment used within this project was uploaded [here](https://github.com/RIT-Environmental-Genomics/Toxicology/blob/main/1.1_Reference_Pipeline/rnaseq-Reference.yml) and may be used to run this pipeline.
 
 
 |Package|Use|
