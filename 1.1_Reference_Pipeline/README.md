@@ -1,11 +1,12 @@
 
 ### Required Packages 
-
+<center>
 |Repository| 
 |  ------ | 
 |[Conda](https://anaconda.org/anaconda/conda)| 
 |[Conda-Forge](https://conda-forge.org/)| 
 |[BioConda](https://bioconda.github.io/)| 
+</center>
 
 ## 1: Create new Conda Environment
 
