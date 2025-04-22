@@ -1,7 +1,6 @@
 
 ### Required Packages 
 
-<center>
 	
 |Repository| 
 |  ------ | 
@@ -9,7 +8,6 @@
 |[Conda-Forge](https://conda-forge.org/)| 
 |[BioConda](https://bioconda.github.io/)| 
 
-</center>
 
 ## 1: Create new Conda Environment
 
