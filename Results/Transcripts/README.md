@@ -2,9 +2,9 @@
 This is the folder for Transcripts
 
 
-|---|TOXINS|---|
-|:---:|:---:|:---:|
+
 | P. textilis | C.  Magus|C. sculpturatus|
+|:---:|:---:|:---:|
 |Protein disulfide-isomerase|Conotoxin superfamily conkunitzin-8|Scorpine-like peptide Tco 41.46-2|
 |Glyceraldehyde-3-phosphate dehydrogenase|Conotoxin superfamily M (Fragment) |Anionic peptide 17.1|
 |coagulation factor Xa|Conotoxin superfamily conkunitzin 10|Toxin CsEv1|
