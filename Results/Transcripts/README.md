@@ -2,7 +2,7 @@
 This is the folder for Transcripts
 
 
-|TOXINS|
+|---|TOXINS|---|
 |:---:|:---:|:---:|
 | P. textilis | C.  Magus|C. sculpturatus|
 |Protein disulfide-isomerase|Conotoxin superfamily conkunitzin-8|Scorpine-like peptide Tco 41.46-2|
