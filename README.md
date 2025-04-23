@@ -62,4 +62,9 @@ This project focuses on the production of a pipeline to identify and (hopefully)
 |[Trinity](https://combine-lab.github.io/salmon/getting_started/)| |
 
 
+|Results|
+|:-:|
+|[FASTQC](https://rit-environmental-genomics.github.io/Toxin-Identification-Pipeline/Results/FASTQC/index.html)|
+
+
 </p>
