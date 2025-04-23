@@ -1,5 +1,5 @@
 # TRANSCRIPTS
-This is the folder for Transcripts
+Our top 10 transcripts per species tested
 
 
 
