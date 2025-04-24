@@ -7,6 +7,7 @@ The following Hardware was used to drive this project. Note that the total hardw
 <br >
 <br >
 
+### This isn't important but is just a basis to compare when following a similar Docker project:
 |Hardware|Information|
 | ------ | ------ |
 |Server|Dell PowerEdge R710 Server Rack|
