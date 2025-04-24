@@ -24,7 +24,7 @@ The following Hardware was used to drive this project. Note that the total hardw
 <p>
   <br>
   
-Example
+Example user add:
 ```sh
 adduser conda
 ```
@@ -119,6 +119,9 @@ CMD ["bash", "-c", "source /opt/conda/etc/profile.d/conda.sh && conda activate b
 ```
 <br >
 <br >
+### Note:
+it's not manadory to use a Dockerfile nor specifically this Dockerfile itself, this is just the docker file used that helped 
+
 </p>
 
 
