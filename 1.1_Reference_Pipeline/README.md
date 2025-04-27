@@ -38,20 +38,7 @@ conda install <package>
 conda deactivate
 ```
 
-The environment used within this project was uploaded [here](https://github.com/RIT-Environmental-Genomics/Toxin-Identification-Pipeline/blob/main/1.1_Reference_Pipeline/rnaseq_Reference.yml) and may be used to run this pipeline.
-
-
-|Package|Use|
-|  ------ | ------ |
-|[SRA-Tools](https://github.com/ncbi/sra-tools)| |
-|[Fastqc]()||
-|[CutAdapt]()| |
-|[Hisat2]()| |
-|[Stringtie]()| |
-|[Samtools]()| |
-|[GFFRead]()| |
-|[Seqtk]()| |
-|[Diamond]()| |
+The environment used within this project was uploaded [here](https://github.com/RIT-Environmental-Genomics/Toxin-Identification-Pipeline/blob/main/1.1_Reference_Pipeline/rnaseq_Reference.yml) and may be used to run this pipeline. 
 
 ## 2: Prefetch and Fastqc
 
