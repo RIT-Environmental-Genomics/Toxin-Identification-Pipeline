@@ -97,13 +97,41 @@ abundance_estimates_to_matrix.pl \
     salmon_output/quant.sf
 ```
 
+## 4: HISAT2
 
-## 4: Convert and Filter
+Top 50 TPM hits can be collected from the quant.sf output into a .txt format:
+
+```sh
+awk 'NR>1 {print $1, $5}' salmon_output/quant.sf | sort -k2,2nr | head -50 | cut -f1 -d' ' > top50_ids.txt
+```
+
+Then top 50 hits can be used with seqtk to subseq the origional Trinity.fasta to show only top hits:
+
+```sh
+seqtk subseq dir/Trinity.fasta dir/top50_ids.txt > Trinity50.fasta
+```
+
+HISAT2 can be used to aligntop hits back onto origional forward and reverse strands: 
+
+Indexing:
+```
+hisat2-build top50_transcripts.fasta top50_index
+```
+Alignment
+```sh
+hisat2 -x top50_index \
+  -1 forwardd_1.fastq -2 reverse_2.fastq \
+  -S top50_aligned.sam \
+  --threads 8
+```
+
+## 5: Convert and Filter
+
 
 Sam files were then converted to BAM files using SAMTools:
 
 ```sh
-samtools view -S -b input.sam > output.bam
+samtools view -bS top50_aligned.sam | samtools sort -o top50_aligned.sorted.bam
 ```
 
 or
@@ -131,7 +159,7 @@ After filtering, [Uniprot's](https://ftp.uniprot.org/pub/databases/uniprot/curre
 gunzip uniprot_sprot.fasta.gz
 ```
 
-## 5: Diamond [BlastX]
+## 6: Diamond [BlastX]
 create diamond database from uniprot fasta from only proteins from the species 
 
 ```sh
