@@ -1,6 +1,6 @@
 # De Novo Pipeline:
-
-If you have previous experience with CONDA, be sure to download the packages from [here](https://github.com/RIT-Environmental-Genomics/Toxin-Identification-Pipeline/blob/main/README.md). Otherwise an optional YAML package has been provided [here](https://github.com/RIT-Environmental-Genomics/Toxin-Identification-Pipeline/blob/main/1.2_De_Novo_Pipeline/rnaseq_De_Novo.yml) to use as a custom CONDA environment. 
+ 
+Although all of this poject was done in a Jupyter Server Environment (not using Conda), this process should work equally well within a standard conda environment. For this reason a YAML file was designed for those interested in running this through a simple conda environment and can be found [here](https://github.com/RIT-Environmental-Genomics/Toxin-Identification-Pipeline/blob/main/1.2_De_Novo_Pipeline/rnaseq_De_Novo.yml). Otherwise if you have previous experience with CONDA, be sure to download the packages from [here](https://github.com/RIT-Environmental-Genomics/Toxin-Identification-Pipeline/blob/main/README.md).
 
 ## 1: Create new Conda Environment
 
@@ -32,15 +32,6 @@ conda deactivate
 ```
 
 
-Although all of this poject was done in a Jupyter Server Environment (not using Conda), this process should work equally well within a standard conda environment. For this reason a YAML file was designed for those interested in running this through a simple conda environment and can be found [here](https://github.com/RIT-Environmental-Genomics/Toxin-Identification-Pipeline/blob/main/1.2_De_Novo_Pipeline/rnaseq_De_Novo.yml).
-
-|Package|Use|
-| ------ | ------ |
-|[SRA-Tools](https://github.com/ncbi/sra-tools)| |
-|[Trimmomatic](https://github.com/usadellab/Trimmomatic)| |
-|[Salmon](https://combine-lab.github.io/salmon/getting_started/)| |
-|[Trinity](https://combine-lab.github.io/salmon/getting_started/)| |
-|[Bandage](https://rrwick.github.io/Bandage/)| Optional step to also allow data visualization of sequences |
 
 ## 2: Prefetch and Fastqc
 
