@@ -44,10 +44,25 @@ Although all of this poject was done in a Jupyter Server Environment (not using 
 |[Salmon](https://combine-lab.github.io/salmon/getting_started/)| |
 |[Trinity](https://combine-lab.github.io/salmon/getting_started/)| |
 
+## 2: Prefetch and Fastqc
 
-### Trinity
+SRA-Tools prefetch command was used to download RNA seq in SRA format
+```sh
+prefetch <Assencion ID>
+```
+Fast-dump was then used to split the file into forward and reverse strands and FASTQ program's fasatqc command was used to analyze quality of FASTA files
+```sh
+Fast-dump --split-files <SRR ID>
 
-### Salmon
+fastqc <SRRID_1.fasta>
+fastqc <SRRID_2.fasta>
+```
+Forward and reverse strands are identified using _1 (Forward) and _2 (Reverse). 
+
+
+## 2. Trinity
+
+## 3. Salmon
 Instead of using Trinity's built in Salmon quantification, Salmon was used at the final steps manually to quantify data as follows:
 
 Trinity.fasta was indexed (just as in HISAT2) 
