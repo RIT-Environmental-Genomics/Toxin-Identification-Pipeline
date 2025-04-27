@@ -3,9 +3,11 @@
 <h1>Toxin Identification Pipeline of RNA Seq data using Reference and <br >
 De Novo genome sequences </h1>
 
-![Pipeline](https://github.com/RIT-Environmental-Genomics/Toxin-Identification-Pipeline/blob/main/other/pngs/Pipeline.png)
 
-[![]()]
+
+![]()
+
+![Pipeline](https://github.com/RIT-Environmental-Genomics/Toxin-Identification-Pipeline/blob/main/other/pngs/Pipeline.png)
 
 This project focuses on the production of a pipeline to identify and (hopefully) dock proteins related to toxins by:
 
