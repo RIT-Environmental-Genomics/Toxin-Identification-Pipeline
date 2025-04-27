@@ -61,9 +61,11 @@ fastqc <SRRID_2.fasta>
 Forward and reverse strands are identified using _1 (Forward) and _2 (Reverse). 
 
 
-## 2. Trinity
+## 3. Trinity
 
-## 3. Salmon
+Trinity was a backbone to forming this pipeline as a reference was needed to align 
+
+## 4. Salmon
 Instead of using Trinity's built in Salmon quantification, Salmon was used at the final steps manually to quantify data as follows:
 
 Trinity.fasta was indexed (just as in HISAT2) 
@@ -97,7 +99,7 @@ abundance_estimates_to_matrix.pl \
     salmon_output/quant.sf
 ```
 
-## 4: HISAT2
+## 5: HISAT2
 
 Top 50 TPM hits can be collected from the quant.sf output into a .txt format:
 
@@ -125,12 +127,12 @@ hisat2 -x top50_index \
   --threads 8
 ```
 
-## 5: Convert and Filter
+## 6: Convert and Filter
 
 This step can now be skipped due to aligning using SEQTK and SALMON
 
 
-## 6: Diamond [BlastX]
+## 7: Diamond [BlastX]
 
 [Uniprot's](https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_trembl.fasta.gz) Toxin database was used to identify genes related to toxins
 (Due to the size of Uniprot's toxin database and the limitations of the hardware used up until this point [three laptops with less than 300 GB storage each], a server was used to contain and process the database into an unzipped fasta file)
@@ -170,7 +172,7 @@ diamond blastx \
 	-s title
 ```
 
-Finished files were then compared with NCBI database to confirm accuracy of identified genes.
+Finished files were then compared with BLASTX from NCBI database to compare.
 
 
 
