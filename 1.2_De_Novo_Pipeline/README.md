@@ -127,31 +127,12 @@ hisat2 -x top50_index \
 
 ## 5: Convert and Filter
 
+This step can now be skipped due to aligning using SEQTK and SALMON
 
-Sam files were then converted to BAM files using SAMTools:
 
-```sh
-samtools view -bS top50_aligned.sam | samtools sort -o top50_aligned.sorted.bam
-```
+## 6: Diamond [BlastX]
 
-or
-```
-samtools sort -o sorted_output.bam output.bam
-```
-
-Stringtie was then used to convert BAM files into GTF files:
-
-```sh
-stringtie input.bam -o output.gtf
-```
-Finally GTF files were converted into GFF3 using GFFREAD:
-```sh
-gffread input.gtf -T -o- | gffread - -E -o output.gff3
-```
-
-GFF3 files were then filtered based on Transcripts Per Million ```TPM``` with only top 25 percentile of most abundant being left after filtering was completed
-
-After filtering, [Uniprot's](https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_trembl.fasta.gz) Toxin database was used to identify genes related to toxins
+[Uniprot's](https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_trembl.fasta.gz) Toxin database was used to identify genes related to toxins
 (Due to the size of Uniprot's toxin database and the limitations of the hardware used up until this point [three laptops with less than 300 GB storage each], a server was used to contain and process the database into an unzipped fasta file)
 
 ``` sh
@@ -159,7 +140,7 @@ After filtering, [Uniprot's](https://ftp.uniprot.org/pub/databases/uniprot/curre
 gunzip uniprot_sprot.fasta.gz
 ```
 
-## 6: Diamond [BlastX]
+
 create diamond database from uniprot fasta from only proteins from the species 
 
 ```sh
