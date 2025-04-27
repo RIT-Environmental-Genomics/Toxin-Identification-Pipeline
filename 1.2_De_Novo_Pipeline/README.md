@@ -43,6 +43,7 @@ Although all of this poject was done in a Jupyter Server Environment (not using 
 |[Trimmomatic](https://github.com/usadellab/Trimmomatic)| |
 |[Salmon](https://combine-lab.github.io/salmon/getting_started/)| |
 |[Trinity](https://combine-lab.github.io/salmon/getting_started/)| |
+|[Bandage](https://rrwick.github.io/Bandage/)| Optional step to also allow data visualization of sequences |
 
 ## 2: Prefetch and Fastqc
 
