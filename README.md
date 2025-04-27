@@ -47,14 +47,14 @@ This project focuses on the production of a pipeline to identify and (hopefully)
 |Package|Use|
 |  ------ | ------ |
 |[SRA-Tools](https://github.com/ncbi/sra-tools)| |
-|[Fastqc]()||
-|[CutAdapt]()| |
-|[Hisat2]()| |
-|[Stringtie]()| |
-|[Samtools]()| |
-|[Bedtools]()| |
-|[Seqtk]()| |
-|[Diamond]()| |  
+|[Fastqc](https://bioconda.github.io/recipes/fastqc/README.html)||
+|[CutAdapt](https://anaconda.org/bioconda/cutadapt)| |
+|[Hisat2](https://anaconda.org/bioconda/hisat2)| |
+|[Stringtie](https://anaconda.org/bioconda/stringtie)| |
+|[Samtools](https://anaconda.org/bioconda/samtools)| |
+|[Gffread](https://anaconda.org/bioconda/gffread)| |
+|[Seqtk](https://anaconda.org/bioconda/seqtk)| |
+|[Diamond](https://anaconda.org/bioconda/diamond)| |  
 
 ### De Novo Pipeline Only
 |Package|Use|
