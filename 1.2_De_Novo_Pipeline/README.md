@@ -73,10 +73,17 @@ salmon index -t Trinity.fasta -i trinity_index
 Forward and Reverse strands from SRA file were then used to quantify data:
 
 ```sh
-salmon quant -i trinity_index -l A \
-             -1 forward_1.fastq -2 reverse_2.fastq \
-             -p 8\
-             -o salmon_output
+salmon index -t trinity_out_dir/Trinity.fasta \
+ -i salmon/trinity_index
+```
+
+```sh
+salmon quant -i trinity_index \
+  -l A \
+  -1  dir/forward_1.fastq \
+  -2  dir/reverse_2.fastq \
+  -p 8 \
+  -o salmon_output
 ```
 
 Finally, TPM was extracted to help filter for remaining steps
@@ -89,7 +96,78 @@ abundance_estimates_to_matrix.pl \
     salmon_output/quant.sf
 ```
 
-### 
+
+## 4: Convert and Filter
+
+Sam files were then converted to BAM files using SAMTools:
+
+```sh
+samtools view -S -b input.sam > output.bam
+```
+
+or
+```
+samtools sort -o sorted_output.bam output.bam
+```
+
+Stringtie was then used to convert BAM files into GTF files:
+
+```sh
+stringtie input.bam -o output.gtf
+```
+Finally GTF files were converted into GFF3 using GFFREAD:
+```sh
+gffread input.gtf -T -o- | gffread - -E -o output.gff3
+```
+
+GFF3 files were then filtered based on Transcripts Per Million ```TPM``` with only top 25 percentile of most abundant being left after filtering was completed
+
+After filtering, [Uniprot's](https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_trembl.fasta.gz) Toxin database was used to identify genes related to toxins
+(Due to the size of Uniprot's toxin database and the limitations of the hardware used up until this point [three laptops with less than 300 GB storage each], a server was used to contain and process the database into an unzipped fasta file)
+
+``` sh
+#unzip
+gunzip uniprot_sprot.fasta.gz
+```
+
+## 5: Diamond [BlastX]
+create diamond database from uniprot fasta from only proteins from the species 
+
+```sh
+grep -A 1 ">.*<species taxa>" uniprot_sprot.fasta > <species>.fasta 
+diamond makedb --in <species>.fasta -d <species>_db
+```
+
+
+Example:
+```sh
+grep -A 1 ">.*Pseudonaja textilis" uniprot_sprot.fasta > snake_only_sprot.fasta 
+diamond makedb --in snake_only_sprot.fasta -d snake_sprot_db
+```
+Diamond BlastX was then done using merged FASTA files and _db.dmnd file
+```sh
+diamond blastx \
+	-d <database>.dmnd \
+	-q <filtered_merged_sequences>.fasta \
+	-o <Species_Results>.m8 \
+	-f 6 qseqid sseqid pident evalue bitscore stitle\
+	-p <processors/threads> \
+#if you need Sensitive:
+	--sensitive \
+	-k 1 <top searches> \
+#if you need to write to a temporary folder
+	-t /tmp/diamond_temp
+	-s title
+```
+
+Finished files were then compared with NCBI database to confirm accuracy of identified genes.
+
+
+
+
+
+
+### Notes:
 
 A majority of this project for De Novo was run on a server limited to 2-8 cores and 20-60GB DDR3 RAM 
 This project can be run on minimum of these specs but was increased due to time constraints and limitations of those working on this pipeline.
