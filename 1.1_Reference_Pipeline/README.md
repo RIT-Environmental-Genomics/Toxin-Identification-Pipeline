@@ -1,13 +1,6 @@
+# Reference Pipeline:
 
-### Required Packages 
-
-	
-|Repository| 
-|  ------ | 
-|[Conda](https://anaconda.org/anaconda/conda)| 
-|[Conda-Forge](https://conda-forge.org/)| 
-|[BioConda](https://bioconda.github.io/)| 
-
+If you have previous experience with CONDA, be sure to download the packages from [here](https://github.com/RIT-Environmental-Genomics/Toxin-Identification-Pipeline/blob/main/README.md). Otherwise an optional YAML package has been provided [here](https://github.com/RIT-Environmental-Genomics/Toxin-Identification-Pipeline/blob/main/1.1_Reference_Pipeline/rnaseq_Reference.yml) to use as a custom CONDA environment. 
 
 ## 1: Create new Conda Environment
 
