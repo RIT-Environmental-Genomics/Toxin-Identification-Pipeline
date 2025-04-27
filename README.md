@@ -8,7 +8,8 @@ De Novo genome sequences </h1>
 ![Species](other/pngs/Species.png)
 
 ![Pipeline](https://github.com/RIT-Environmental-Genomics/Toxin-Identification-Pipeline/blob/main/other/pngs/Pipeline.png)
-
+<br >
+<br >
 This project focuses on the production of a pipeline to identify and (hopefully) dock proteins related to toxins by:
 
 - Uploading RNASeq Data from NCBI
