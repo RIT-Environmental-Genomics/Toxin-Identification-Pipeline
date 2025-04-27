@@ -68,8 +68,10 @@ This project focuses on the production of a pipeline to identify and (hopefully)
 
 |Results|
 |:-:|
+|[Alignment Statistics](https://github.com/RIT-Environmental-Genomics/Toxin-Identification-Pipeline/tree/main/Results/Alignment_Statistics)|
 |[FASTQC](https://rit-environmental-genomics.github.io/Toxin-Identification-Pipeline/Results/FASTQC/index.html)|
 |[Top Hit Transcripts](https://github.com/RIT-Environmental-Genomics/Toxin-Identification-Pipeline/tree/main/Results/Transcripts)|
+|[Transcripts](https://github.com/RIT-Environmental-Genomics/Toxin-Identification-Pipeline/tree/main/Results/TPM)|
 
 
 </p>
