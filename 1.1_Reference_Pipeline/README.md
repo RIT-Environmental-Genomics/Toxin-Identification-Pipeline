@@ -83,11 +83,28 @@ hisat2-build -p <threads> <Reference_Genome>_genomic.fna genome-index
 hisat2 -p <threads> -x genome-index --dta -1 <Forward Strand>.fastq -2 <Reverse_Strand>.fastq -S <aligned_strands>.sam
 ```
 
-Sam files were then converted to BAM files
+## 5: Convert and Filter
 
-Bam files converted to GTF files
+Sam files were then converted to BAM files using SAMTools:
 
-GTF files converted to GFF3 files
+```sh
+samtools view -S -b input.sam > output.bam
+```
+
+or
+```
+samtools sort -o sorted_output.bam output.bam
+```
+
+Stringtie was then used to convert BAM files into GTF files:
+
+```sh
+stringtie input.bam -o output.gtf
+```
+Finally GTF files were converted into GFF3 using GFFREAD:
+```sh
+gffread input.gtf -T -o- | gffread - -E -o output.gff3
+```
 
 GFF3 files were then filtered based on Transcripts Per Million ```TPM``` with only top 25 percentile of most abundant being left after filtering was completed
 
@@ -99,7 +116,7 @@ After filtering, [Uniprot's](https://ftp.uniprot.org/pub/databases/uniprot/curre
 gunzip uniprot_sprot.fasta.gz
 ```
 
-## Diamond [BlastX]
+## 6: Diamond [BlastX]
 create diamond database from uniprot fasta from only proteins from the species 
 
 ```sh
