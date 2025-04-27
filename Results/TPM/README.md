@@ -1,5 +1,5 @@
 CONUS MAGUS
-|Ssalmon Output|TPM|
+|Salmon Output|TPM|
 |:-:|:-:|
 |TRINITY_DN35084_c5_g2|1587556.52|
 |TRINITY_DN35084_c5_g3|1396729.83|
