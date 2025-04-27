@@ -49,7 +49,7 @@ The environment used within this project was uploaded [here](https://github.com/
 |[Hisat2]()| |
 |[Stringtie]()| |
 |[Samtools]()| |
-|[Bedtools]()| |
+|[GFFRead]()| |
 |[Seqtk]()| |
 |[Diamond]()| |
 
