@@ -20,7 +20,7 @@ This project focuses on the production of a pipeline to identify and (hopefully)
 -  Convert SAM into GFF3 and filter out all but top 25% sequence abundance
 -  Filter forward and reverse Sequences using GFF3
 -  BLASTX sequence to Toxin Database [Uniprot](https://www.uniprot.org/) based on species 
--  Compare BLASTX results to 
+-  Compare BLASTX results from DIAMOND to NCBI Database if desired
 
 <br >
 
