@@ -1,4 +1,6 @@
-CONUS MAGUS
+## CONUS MAGUS
+### (This was interpreted post top 50 filter and may not be accurate to the entire sequence / genome)
+
 |Salmon Output|TPM|
 |:-:|:-:|
 |TRINITY_DN35084_c5_g2|1587556.52|
