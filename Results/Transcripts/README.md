@@ -1,5 +1,5 @@
 # TRANSCRIPTS
-Our top 10 transcripts per species tested
+Our top 7 transcripts per species tested
 
 
 
