@@ -27,7 +27,7 @@ This project focuses on the production of a pipeline to identify and (hopefully)
 |Pipeline|
 | ------ |
 |[Reference](https://github.com/RIT-Environmental-Genomics/Toxicology/blob/main/1.1_Reference_Pipeline/)|
-|[De Novo](https://github.com/RIT-Environmental-Genomics/Toxicology/tree/main/1.2_De_Novo_Pipeline)|
+|[De Novo](https://github.com/RIT-Environmental-Genomics/Toxicology/tree/main/1.2_De_Novo_Pipeline/)|
 
 <br >
 
@@ -56,17 +56,19 @@ This project focuses on the production of a pipeline to identify and (hopefully)
 |[Seqtk](https://anaconda.org/bioconda/seqtk)| |
 |[Diamond](https://anaconda.org/bioconda/diamond)| |  
 
-### De Novo Pipeline Only
+### [De Novo Pipeline Only](https://github.com/RIT-Environmental-Genomics/Toxin-Identification-Pipeline/blob/main/1.2_De_Novo_Pipeline/README.md)
 |Package|Use|
 |  ------ | ------ |
 |[Trimmomatic](https://github.com/usadellab/Trimmomatic)| |
 |[Salmon](https://combine-lab.github.io/salmon/getting_started/)| |
 |[Trinity](https://combine-lab.github.io/salmon/getting_started/)| |
+|[Bandage](https://rrwick.github.io/Bandage/)| Optional step to also allow data visualization of sequences |
 
 
 |Results|
 |:-:|
 |[FASTQC](https://rit-environmental-genomics.github.io/Toxin-Identification-Pipeline/Results/FASTQC/index.html)|
+|[Top Hit Transcripts](https://github.com/RIT-Environmental-Genomics/Toxin-Identification-Pipeline/tree/main/Results/Transcripts)|
 
 
 </p>
