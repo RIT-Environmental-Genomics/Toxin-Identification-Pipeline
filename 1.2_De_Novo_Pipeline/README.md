@@ -45,7 +45,36 @@ Although all of this poject was done in a Jupyter Server Environment (not using 
 |[Trinity](https://combine-lab.github.io/salmon/getting_started/)| |
 
 
+### Trinity
 
+### Salmon
+Instead of using Trinity's built in Salmon quantification, Salmon was used at the final steps manually to quantify data as follows:
+
+Trinity.fasta was indexed (just as in HISAT2) 
+```
+salmon index -t Trinity.fasta -i trinity_index
+```
+
+Forward and Reverse strands from SRA file were then used to quantify data:
+
+```sh
+salmon quant -i trinity_index -l A \
+             -1 forward_1.fastq -2 reverse_2.fastq \
+             -p 8\
+             -o salmon_output
+```
+
+Finally, TPM was extracted to help filter for remaining steps
+
+```sh
+abundance_estimates_to_matrix.pl \
+    --est_method salmon \
+    --gene_trans_map Trinity.fasta.gene_trans_map \
+    --name_sample_by_basedir \
+    salmon_output/quant.sf
+```
+
+### 
 
 A majority of this project for De Novo was run on a server limited to 2-8 cores and 20-60GB DDR3 RAM 
 This project can be run on minimum of these specs but was increased due to time constraints and limitations of those working on this pipeline.
