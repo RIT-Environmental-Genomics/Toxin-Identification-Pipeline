@@ -53,4 +53,5 @@
 |TRINITY_DN27836_c0_g1|14783.59|
 |TRINITY_DN35299_c5_g1|14623.82|
 |TRINITY_DN35255_c4_g3|13991.65|
-![image](https://github.com/user-attachments/assets/7426e83b-c15d-4f4e-a508-49b2dea02c1c)
+
+## CONUS TEXTILE
