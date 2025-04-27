@@ -5,7 +5,7 @@ De Novo genome sequences </h1>
 
 
 
-![]()
+![Species](other/pngs/Species.png)
 
 ![Pipeline](https://github.com/RIT-Environmental-Genomics/Toxin-Identification-Pipeline/blob/main/other/pngs/Pipeline.png)
 
