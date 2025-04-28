@@ -11,4 +11,4 @@ Our top 7 transcripts per species tested
 |ATP synthase subunit a|Vacuolar proton pump subunit B|Antimicrobial peptide TsAP-2|
 |F5/8 type C domain-containing protein|Hormone superfamily conopressin/conophysin|Mauriporin|
 |Cysteine-rich venom protein|Conotoxin [Cono lenavati]|Ras-like GTP-binding protein Rho1|
-|Venom C-type lectin galactose binding isoform|Disulfide isomerase (Fragment) [Conus amidase]|Alpha-like toxin CsEv5|
+|Three-finger toxins|Disulfide isomerase (Fragment) [Conus amidase]|Alpha-like toxin CsEv5|
