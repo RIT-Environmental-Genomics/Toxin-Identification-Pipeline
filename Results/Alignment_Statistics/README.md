@@ -10,3 +10,7 @@ CONUS MAGUS:
 Pseudojana textilis:
 Extracted venom glands
 ![HISAT_23348481](https://github.com/RIT-Environmental-Genomics/Toxin-Identification-Pipeline/blob/main/other/pngs/SRR23348481.png)
+
+# Centruoides Sculpturatus
+![image](https://github.com/user-attachments/assets/a197ddd4-4c96-4558-ace4-7b285cf74818)
+
