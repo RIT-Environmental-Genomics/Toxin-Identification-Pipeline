@@ -56,6 +56,8 @@ This project focuses on the production of a pipeline to identify and (hopefully)
 |[Gffread](https://anaconda.org/bioconda/gffread)| |
 |[Seqtk](https://anaconda.org/bioconda/seqtk)| |
 |[Diamond](https://anaconda.org/bioconda/diamond)| |  
+<br >
+<br >
 
 ### [De Novo Pipeline Only](https://github.com/RIT-Environmental-Genomics/Toxin-Identification-Pipeline/blob/main/1.2_De_Novo_Pipeline/README.md)
 |Package|Use|
@@ -65,6 +67,8 @@ This project focuses on the production of a pipeline to identify and (hopefully)
 |[Trinity](https://combine-lab.github.io/salmon/getting_started/)| |
 |[Bandage](https://rrwick.github.io/Bandage/)| Optional step to also allow data visualization of sequences |
 
+<br >
+<br >
 
 |Results|
 |:-:|
