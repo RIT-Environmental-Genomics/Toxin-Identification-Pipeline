@@ -4,13 +4,13 @@ This is the folder for statistics on alignments
 
 ## HISAT2:
 
-CONUS MAGUS:
+# _CONUS MAGUS_:
 ![HISAT_CONUS_MAGUS](https://github.com/RIT-Environmental-Genomics/Toxin-Identification-Pipeline/blob/main/other/pngs/HISAT2_Conus_Magus.png)
 
-Pseudojana textilis:
-Extracted venom glands
+# _Pseudojana textilis_:
+## Extracted venom glands
 ![HISAT_23348481](https://github.com/RIT-Environmental-Genomics/Toxin-Identification-Pipeline/blob/main/other/pngs/SRR23348481.png)
 
-# Centruoides Sculpturatus
+# _Centruoides Sculpturatus_
 ![image](https://github.com/user-attachments/assets/a197ddd4-4c96-4558-ace4-7b285cf74818)
 
