@@ -110,11 +110,6 @@
 |STRG.1307|XP_067129104|
 |STRG.18899|XP_067136263|
 
-![image](https://github.com/user-attachments/assets/873019b1-33a3-4836-94be-500c1130be80)
 
-XP_023243316
-XP_023243318
-XP_067129104
-XP_067136263
-![image](https://github.com/user-attachments/assets/56f58891-9531-42ad-91c8-ae6dfc420f1a)
+
 
