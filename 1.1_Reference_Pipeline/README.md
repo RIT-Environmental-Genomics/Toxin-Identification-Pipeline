@@ -60,8 +60,9 @@ Hisat2 was then used to build a genome-index based on a reference genome and ali
 ```sh
 hisat2-build -p <threads> <Reference_Genome>_genomic.fna genome-index
 
-hisat2 -p <threads> -x genome-index --dta -1 <Forward Strand>.fastq -2 <Reverse_Strand>.fastq -S <aligned_strands>.sam
+hisat2 -p <threads> -x genome-index --dta -1 <Forward Strand>.fastq -2 <Reverse_Strand>.fastq --summary-file <filename>.txt -S <aligned_strands>.sam
 ```
+___BE SURE TO ADD A SUMMARY FILE AS SHOWN IF YOU ARE INTERESTED IN ALIGNMENT RATE___
 
 ## 5: Convert and Filter
 
