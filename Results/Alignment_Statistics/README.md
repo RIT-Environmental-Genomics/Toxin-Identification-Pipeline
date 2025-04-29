@@ -4,8 +4,11 @@ This is the folder for statistics on alignments
 
 ## HISAT2:
 
-# _CONUS MAGUS_:
+# _Cobus magus_:
 ![HISAT_CONUS_MAGUS](https://github.com/RIT-Environmental-Genomics/Toxin-Identification-Pipeline/blob/main/other/pngs/HISAT2_Conus_Magus.png)
+
+# _Conus textile_:
+![HISAT_CONUS_TEXTILE](https://github.com/RIT-Environmental-Genomics/Toxin-Identification-Pipeline/blob/main/other/pngs/Hisat2_Conus_Textile.png)
 
 # _Pseudojana textilis_:
 ## Extracted venom glands
