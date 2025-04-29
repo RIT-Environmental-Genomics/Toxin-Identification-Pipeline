@@ -111,9 +111,11 @@ Alignment
 ```sh
 hisat2 -x top50_index \
   -1 forwardd_1.fastq -2 reverse_2.fastq \
+  --summary-file <filename>.txt\
   -S top50_aligned.sam \
   --threads 8
 ```
+___BE SURE TO ADD A SUMMARY FILE AS SHOWN IF YOU ARE INTERESTED IN ALIGNMENT RATE___
 
 ## 6: Convert and Filter
 
