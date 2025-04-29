@@ -10,6 +10,8 @@ De Novo genome sequences </h1>
 ![Pipeline](https://github.com/RIT-Environmental-Genomics/Toxin-Identification-Pipeline/blob/main/other/pngs/Pipeline.png)
 <br >
 <br >
+<br >
+<h2>
 This project focuses on the production of a pipeline to identify and (hopefully) dock proteins related to toxins by:
 
 - Uploading RNASeq Data from NCBI
@@ -21,7 +23,7 @@ This project focuses on the production of a pipeline to identify and (hopefully)
 -  Filter forward and reverse Sequences using GFF3
 -  BLASTX sequence to Toxin Database [Uniprot](https://www.uniprot.org/) based on species 
 -  Compare BLASTX results from DIAMOND to NCBI Database if desired
-
+</h2>
 <br >
 
 ### Pipelines:
