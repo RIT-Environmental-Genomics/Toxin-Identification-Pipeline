@@ -45,27 +45,27 @@ This project focuses on the production of a pipeline to identify and (hopefully)
 ## Package
 
 ### All Pipelines
-|Package|Use|
-|  ------ | ------ |
-|[SRA-Tools](https://github.com/ncbi/sra-tools)| |
-|[Fastqc](https://bioconda.github.io/recipes/fastqc/README.html)||
-|[CutAdapt](https://anaconda.org/bioconda/cutadapt)| |
-|[Hisat2](https://anaconda.org/bioconda/hisat2)| |
-|[Stringtie](https://anaconda.org/bioconda/stringtie)| |
-|[Samtools](https://anaconda.org/bioconda/samtools)| |
-|[Gffread](https://anaconda.org/bioconda/gffread)| |
-|[Seqtk](https://anaconda.org/bioconda/seqtk)| |
-|[Diamond](https://anaconda.org/bioconda/diamond)| |  
+|Package|
+|  ------ |
+|[SRA-Tools](https://github.com/ncbi/sra-tools)| 
+|[Fastqc](https://bioconda.github.io/recipes/fastqc/README.html)|
+|[CutAdapt](https://anaconda.org/bioconda/cutadapt)| 
+|[Hisat2](https://anaconda.org/bioconda/hisat2)| 
+|[Stringtie](https://anaconda.org/bioconda/stringtie)| 
+|[Samtools](https://anaconda.org/bioconda/samtools)| 
+|[Gffread](https://anaconda.org/bioconda/gffread)| 
+|[Seqtk](https://anaconda.org/bioconda/seqtk)| 
+|[Diamond](https://anaconda.org/bioconda/diamond)| 
 <br >
 <br >
 
 ### [De Novo Pipeline Only](https://github.com/RIT-Environmental-Genomics/Toxin-Identification-Pipeline/blob/main/1.2_De_Novo_Pipeline/README.md)
-|Package|Use|
-|  ------ | ------ |
-|[Trimmomatic](https://github.com/usadellab/Trimmomatic)| |
-|[Salmon](https://combine-lab.github.io/salmon/getting_started/)| |
-|[Trinity](https://combine-lab.github.io/salmon/getting_started/)| |
-|[Bandage](https://rrwick.github.io/Bandage/)| Optional step to also allow data visualization of sequences |
+|Package|
+|  ------ | 
+|[Trimmomatic](https://github.com/usadellab/Trimmomatic)|
+|[Salmon](https://combine-lab.github.io/salmon/getting_started/)| 
+|[Trinity](https://combine-lab.github.io/salmon/getting_started/)| 
+|[Bandage](https://rrwick.github.io/Bandage/)| 
 
 <br >
 <br >
